@@ -9,8 +9,6 @@ function resetButton() {
     resetButton.addEventListener('click', resetBoard);
     resetButton.textContent = 'Reset Board';
     controls.append(resetButton);
-
-    return resetButton;
 }
 
 export default resetButton;

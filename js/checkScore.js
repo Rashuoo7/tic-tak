@@ -1,5 +1,6 @@
 const gameInfo = document.querySelector("#game-info");
 
+
 function checkScore() {
     const allSquares = document.querySelectorAll(".board-square");
 

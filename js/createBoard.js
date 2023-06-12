@@ -14,7 +14,6 @@ function createBoard() {
         cellElement.addEventListener('click', addChoice);
         gameBoard.append(cellElement);
     });
-    return gameBoard;
-}
+    }
 
 export default createBoard;
