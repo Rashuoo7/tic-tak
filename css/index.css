@@ -26,6 +26,10 @@ body{
   width: 7rem;
   height: 7rem;
   box-sizing: border-box;
+  cursor: pointer;
+}
+.board-square:hover{
+  background-color: #bae8e8;
 }
 
 .circle{

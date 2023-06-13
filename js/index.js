@@ -1,5 +1,6 @@
 import resetButton from "./resetButton.js";
 import createBoard from "./createBoard.js";
 
-createBoard();
+const gameBoard = document.querySelector("#main-board");
+createBoard(gameBoard);
 resetButton();

@@ -1,18 +1,21 @@
 {
   "name": "tic-tak",
-  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
   "scripts": {
-    "test": " vitest ",
+    "test": "vitest",
     "dev": "vite"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vitest": "^0.32.0"
+    "@playwright/test": "^1.35.0",
+    "@testing-library/dom": "^9.3.0",
+    "@vitest/browser": "^0.32.0",
+    "vitest": "^0.32.0",
+    "webdriverio": "^8.11.2"
   },
   "dependencies": {
     "jsdom": "^22.1.0",
