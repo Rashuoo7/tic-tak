@@ -1,4 +1,4 @@
-import setGameInfo from "./setGameInfo";
+import setGameInfo from "./setGameInfo.js";
 
 function checkScore() {
     const allSquares = document.querySelectorAll(".board-square");
