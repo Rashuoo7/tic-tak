@@ -5,8 +5,7 @@ test('Board has 9 Square', async ({ page }) => {
   await page.goto('https://rashuoo7.github.io/tic-tak/');
 
   // Expect a title "to contain" a substring.
-  const locator = page.locator('#main-board > .board-square');
-console.log(locator)
+  const locator = page.locator('.main-board > .board-square')
   await expect(locator).toHaveCount(9);
 
 });
