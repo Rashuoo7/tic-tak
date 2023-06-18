@@ -1,6 +1,6 @@
-import resetButton from "./resetButton.js";
-import createBoard from "./createBoard.js";
+import Game from "./Game";
 
-const gameBoard = document.querySelector("#main-board");
-createBoard(gameBoard);
-resetButton();
+const game = new Game();
+
+game.makeBoard()
+game.addResetButton()

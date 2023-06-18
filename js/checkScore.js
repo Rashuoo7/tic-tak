@@ -1,8 +1,7 @@
-const gameInfo = document.querySelector("#game-info");
+import setGameInfo from "./setGameInfo";
 
 function checkScore() {
     const allSquares = document.querySelectorAll(".board-square");
-
 
     const winningPattern = [
         [0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]
@@ -15,7 +14,7 @@ function checkScore() {
 
 
         if (circleWins) {
-            gameInfo.textContent = "Circle Wins!";
+            setGameInfo("Circle Wins!")
             allSquares.forEach(square => square.replaceWith(square.cloneNode(true)))
             return 0
         }
@@ -29,7 +28,7 @@ function checkScore() {
 
 
         if (crossWins) {
-            gameInfo.textContent = "Cross Wins!";
+            setGameInfo("Cross Wins!");
             allSquares.forEach(square => square.replaceWith(square.cloneNode(true)))
             return 0
         }
@@ -39,7 +38,7 @@ function checkScore() {
     /*Tie Wins Condition*/
     const tie = Array.from(allSquares).every(cell => cell.children.length !== 0);
     if (tie) {
-        gameInfo.textContent = "It is a Tie!";
+        setGameInfo("It is a Tie!");
         allSquares.forEach(square => square.replaceWith(square.cloneNode(true)))
         return 0
     }
