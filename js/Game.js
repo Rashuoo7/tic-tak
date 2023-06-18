@@ -1,5 +1,5 @@
-import checkScore from "./checkScore";
-import setGameInfo from "./setGameInfo";
+import checkScore from "./checkScore.js";
+import setGameInfo from "./setGameInfo.js";
 
 function Game() {
     let body = document.querySelector('body');
